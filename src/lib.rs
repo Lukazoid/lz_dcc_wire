@@ -35,7 +35,7 @@ mod dcc_encoded_bit;
 pub use self::dcc_encoded_bit::DccEncodedBit;
 
 mod polarity;
-pub(crate) use self::polarity::Polarity;
+pub use self::polarity::Polarity;
 
 mod range_inclusive_ext;
 pub(crate) use self::range_inclusive_ext::RangeInclusiveExt;
