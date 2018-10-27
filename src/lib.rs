@@ -6,6 +6,7 @@ extern crate generic_array;
 extern crate lazy_static;
 #[macro_use]
 extern crate log;
+extern crate lz_circular_bit_buffer;
 #[cfg(test)]
 #[macro_use]
 extern crate matches;
@@ -18,9 +19,6 @@ extern crate typenum;
 
 mod buffered_dcc_bit_decoder;
 pub use self::buffered_dcc_bit_decoder::BufferedDccBitDecoder;
-
-mod circular_bit_buffer;
-pub(crate) use self::circular_bit_buffer::CircularBitBuffer;
 
 mod dcc_bit;
 pub(crate) use self::dcc_bit::DccBit;

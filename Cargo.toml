@@ -8,6 +8,7 @@ bit_field = "0.9.0"
 generic-array = "0.12.0"
 lazy_static = "1.1.0"
 log = "0.4.5"
+lz_circular_bit_buffer = { git = "https://github.com/Lukazoid/lz_circular_bit_buffer" }
 typenum = "1.10.0"
 
 [dev-dependencies]

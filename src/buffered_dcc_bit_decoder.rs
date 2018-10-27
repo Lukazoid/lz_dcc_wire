@@ -1,6 +1,7 @@
 use core::time::Duration;
+use lz_circular_bit_buffer::CircularBitBuffer;
 use typenum::U1;
-use {CircularBitBuffer, DccBitDecoder, Polarity};
+use {DccBitDecoder, Polarity};
 
 #[derive(Debug, Default)]
 pub struct BufferedDccBitDecoder {
