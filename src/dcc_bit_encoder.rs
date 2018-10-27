@@ -22,10 +22,10 @@ mod tests {
 
         dcc_bit_decoder
             .on_polarity_change(Polarity::Positive, dcc_encoded_bit.first_half_duration());
-        dcc_bit_decoder
+        let decoded_bit = dcc_bit_decoder
             .on_polarity_change(Polarity::Negative, dcc_encoded_bit.second_half_duration());
 
-        assert_eq!(dcc_bit_decoder.dequeue_bit(), Some(bit));
+        assert_eq!(decoded_bit, Some(bit));
     }
 
     #[test]

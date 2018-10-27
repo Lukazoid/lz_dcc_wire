@@ -16,6 +16,9 @@ extern crate num;
 extern crate std;
 extern crate typenum;
 
+mod buffered_dcc_bit_decoder;
+pub use self::buffered_dcc_bit_decoder::BufferedDccBitDecoder;
+
 mod circular_bit_buffer;
 pub(crate) use self::circular_bit_buffer::CircularBitBuffer;
 
